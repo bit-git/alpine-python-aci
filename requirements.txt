@@ -1,0 +1,17 @@
+requests
+netmiko
+paramiko
+ansible
+git+git://github.com/datacenter/arya@master
+argparse
+flask
+flask-bootstrap
+wtforms
+flake8
+white
+ciscosparkapi
+ncclient
+pyang
+urllib3
+xmltodict
+pygraphviz
