@@ -16,7 +16,7 @@ RUN wget https://d1nmyq4gcgsfi5.cloudfront.net/fileMedia/1f3d41ce-d154-44e3-74c1
 RUN wget https://d1nmyq4gcgsfi5.cloudfront.net/fileMedia/b3b69aa3-891b-41ff-46db-a73b4b215860/acimodel-4.2_3h-py2.py3-none-any.whl \
 && pip install acimodel-4.2_3h-py2.py3-none-any.whl
 
-RUN rm -r alpine-python-aci
+RUN rm -r /root/workspace/alpine-python-aci
 RUN rm acicobra-4.2_3h-py2.py3-none-any.whl
 RUN rm acimodel-4.2_3h-py2.py3-none-any.whl
 CMD ["sh"]
