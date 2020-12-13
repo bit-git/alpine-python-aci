@@ -1,6 +1,22 @@
+# alpine-python-aci dockerfile
 FROM python:alpine3.12
 
-RUN apk update && apk upgrade && apk add openssh vim nano gcc musl-dev libc-dev libc6-compat linux-headers build-base git libffi-dev openssl-dev graphviz graphviz-dev
+RUN apk update && apk upgrade && apk add openssh \
+                                         git \
+                                         vim \
+                                         nano \
+                                         gcc \
+                                         musl-dev \
+                                         libc-dev \
+                                         libc6-compat \
+                                         linux-headers \
+                                         build-base \
+                                         libffi-dev \
+                                         openssl-dev \
+                                         libxml2-dev \
+                                         libxslt-dev \ 
+                                         graphviz \
+                                         graphviz-dev
 
 WORKDIR /root/workspace/
 
